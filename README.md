@@ -6,6 +6,7 @@ Custom InputAccessoryView to help with form navigation (previous, next, done but
 
 1. Add the files (FormNavigationInputAccessoryView.h & FormNavigationInputAccessoryView.m) to your project
 2. Add the following code to MyViewController.h (where MyViewController is the name of the ViewController that manages the form)
+
 ```
 #import "FormNavigationInputAccessoryView.h"
 @interface MyViewController : UIViewController <UITextFieldDelegate, FormNavigationInputAccessoryViewDelegate> {
@@ -13,7 +14,9 @@ Custom InputAccessoryView to help with form navigation (previous, next, done but
 	UITextField *aTextField;
 }
 ```
+
 3. Add the following code to MyViewController.m (where MyViewController is the name of the ViewController that manages the form)
+
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,7 +26,9 @@ Custom InputAccessoryView to help with form navigation (previous, next, done but
 	[aTextField setDelegate:self];	
 	[aTextField setInputAccessoryView:inputAccessory];
 }
+
 #pragma mark - Previous, Next, Done InputAccessoryView Delegate
+
 - (void)inputPreviousPressed {
 	// ...
 }
