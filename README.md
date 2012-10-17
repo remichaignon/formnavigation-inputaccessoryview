@@ -27,7 +27,7 @@ Custom InputAccessoryView to help with form navigation (previous, next, done but
 	[aTextField setInputAccessoryView:inputAccessory];
 }
 
-#pragma mark - Previous, Next, Done InputAccessoryView Delegate
+#pragma mark - FormNavigationInputAccessoryViewDelegate
 
 - (void)inputPreviousPressed {
 	// ...
