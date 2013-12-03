@@ -2,6 +2,11 @@
 
 Custom InputAccessoryView to help with form navigation (previous, next, done buttons).
 
+## Status
+
+Not in development.
+
+
 ## Usage
 
 1. Add the files (FormNavigationInputAccessoryView.h & FormNavigationInputAccessoryView.m) to your project
@@ -23,7 +28,7 @@ Custom InputAccessoryView to help with form navigation (previous, next, done but
 
 	inputAccessory = [[FormNavigationInputAccessoryView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 44.0)];
 	[inputAccessory setDelegate:self];
-	[aTextField setDelegate:self];	
+	[aTextField setDelegate:self];
 	[aTextField setInputAccessoryView:inputAccessory];
 }
 
